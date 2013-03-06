@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code for America Members Heat Map</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="http://dev.bowdenweb.com/od/cfa/a/i/brigade.codeforamerica.org.favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script src="../../src/heatmap.js"></script>
+    <script src="../../src/heatmap-gmaps.js"></script>
+    <script src="cfa-members.json"></script>
+    <style>
+.maincontent h1{margin-bottom:10px}
+.maincontent{position:relative;
+padding:20px;
+margin:auto;
+}
+#heatmapArea{position:relative; width:100%; height:100%;
+}
+#configArea{position:fixed; right:2em; bottom:100px; z-index:999999999; background-color:rgba(0,0,0,0.5);
+height:425px;
+width:200px;
+padding:10px;
+-moz-border-radius:5px; -ms-border-radius:5px; -webkit-border-radius:5px; border-radius:5px
+}
+.maincontent .btn{margin-top:25px; padding:10px 20px 10px 20px;
+-moz-border-radius:15px; -ms-border-radius:15px; -o-border-radius:15px; -webkit-border-radius:15px; border-radius:15px;
+border:2px solid #000; cursor:pointer; color:#fff; background-color:#000}
+#gen:hover{background-color:grey; color:#000}
+textarea{width:260px; padding:10px; height:200px}
+.maincontent h2{margin-top:0}
+
+#configArea h2,#configArea p{
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 2px 2px rgba(0,0,0,.4);
+    }
+
+    /**
+#configArea .btn {
+      margin-top: 10px;
+    }
+**/
+
+#colophonstyle{position:absolute;width:940px;top:750px;text-align:center}
+</style>
+
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Code for America Members Heat Map</h1>
+      <h1 class="logo logovb"><a href="http://codeforvirginiabeach.org/" title="Code for Virginia Beach &#124; A Code for America Brigade">Code for Virginia Beach</a></h1>
+      <!-- <h1 class="logo logocfa"><a href="http://codeforamerica.org/" title="Code for America &#124; A New Kind of Public Service">Code for America</a></h1> -->
+    </header>
+      <div class="maincontent">
+        <div id="heatmapArea"></div>
+        <div id="configArea">
+          <h2>Sidenotes</h2>
+          <p>This is a demonstration of a canvas heatmap gmaps overlay</p>
+          <p><strong>Note: this is an early release of the heatmap layer. Please feel free to <a href="https://github.com/pa7/heatmap.js" target="_blank">contribute patches</a>. (e.g: correct datapoint pixels after dragrelease (in draw))</strong>.</p>
+          <div id="tog" class="btn">Toggle HeatmapOverlay</div>
+          <div id="gen" class="btn">Add 5 random lat/lng coordinates</div>
+        </div>
+        <div id="colophon"><a href="http://www.patrick-wied.at/static/heatmapjs/">heatmap.js</a> by <a href="http://www.patrick-wied.at" target="_blank">Patrick Wied</a></div>
+
+      </div>
+    <script>
+var map;
+var heatmap;
+var testData={
+  max: 46,
+  data: adtData,
+};
+window.onload = function(){
+  var myLatlng = new google.maps.LatLng(38.4, -99.7);
+  var myOptions ={
+    zoom: 5,
+    center: myLatlng,
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    disableDefaultUI: false,
+    scrollwheel: true,
+    draggable: true,
+    navigationControl: true,
+    mapTypeControl: false,
+    scaleControl: true,
+    disableDoubleClickZoom: false
+  };
+  map = new google.maps.Map(document.getElementById("heatmapArea"), myOptions);
+  // radius is in pixels
+  heatmap = new HeatmapOverlay(map,{"radius":55, "visible":true, "opacity":60});
+  
+  document.getElementById("gen").onclick = function(){
+		var x = 5;
+		while(x--){
+		
+var lat = Math.random()*180;
+var lng = Math.random()*180;
+var count = Math.floor(Math.random()*180+1);
+
+heatmap.addDataPoint(lat,lng,count);
+		
+		}
+	
+	};
+	
+	document.getElementById("tog").onclick = function(){
+		heatmap.toggle();
+	};
+  
+  
+  
+  google.maps.event.addListenerOnce(map, "idle", function(){
+    heatmap.setDataSet(testData);
+  });
+};
+</script>
+  </body>
+</html>
+
+
+
+
+
+
+
