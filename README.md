@@ -1,3 +1,10 @@
+vb-adt-heatmaps
+
+Virginia Beach ADT (Average Daily Traffic) Heatmaps
+From 2009-2012
+
+Note: this data is not 100% accurate; I manually plotted the lat/lon based off the data. Ideally replaced by correct lat/lon that virginia beach gis uses.
+/** heatmap.js read.me **/
 # heatmap.js
 heatmap.js is a JavaScript library that can be used to generate web heatmaps with the html5canvas element based on your data.
 
