@@ -1,0 +1,263 @@
+<div class="the-content">
+							<br>
+							<div class="clear"></div>
+							<p>A lot of people struggle with constructing heatmaps, because most values are normalized over 100 and it takes a lot of grief to figure out how to evenly step the colours from 1 to 100. After a lot of faulty experimentation I ended up hard coding the following:</p>
+<p>Output as follows:</p>
+<div style="background:rgb(0,0,255);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">0,0,255</div>
+<div style="background:rgb(0,1,255);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">0,1,255</div>
+<div style="background:rgb(0,2,255);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">0,2,255</div>
+<div style="background:rgb(0,4,255);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">0,4,255</div>
+<div style="background:rgb(0,5,255);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">0,5,255</div>
+<div style="background:rgb(0,7,255);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">0,7,255</div>
+<div style="background:rgb(0,9,255);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">0,9,255</div>
+<div style="background:rgb(0,11,255);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">0,11,255</div>
+<div style="background:rgb(0,13,255);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">0,13,255</div>
+<div style="background:rgb(0,15,255);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">0,15,255</div>
+<div style="background:rgb(0,18,253);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">0,18,253</div>
+<div style="background:rgb(0,21,251);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">0,21,251</div>
+<div style="background:rgb(0,24,250);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">0,24,250</div>
+<div style="background:rgb(0,27,248);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">0,27,248</div>
+<div style="background:rgb(0,30,245);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">0,30,245</div>
+<div style="background:rgb(0,34,243);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">0,34,243</div>
+<div style="background:rgb(0,37,240);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">0,37,240</div>
+<div style="background:rgb(0,41,237);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">0,41,237</div>
+<div style="background:rgb(0,45,234);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">0,45,234</div>
+<div style="background:rgb(0,49,230);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">0,49,230</div>
+<div style="background:rgb(0,53,226);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">0,53,226</div>
+<div style="background:rgb(0,57,222);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">0,57,222</div>
+<div style="background:rgb(0,62,218);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">0,62,218</div>
+<div style="background:rgb(0,67,214);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">0,67,214</div>
+<div style="background:rgb(0,71,209);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">0,71,209</div>
+<div style="background:rgb(0,76,204);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">0,76,204</div>
+<div style="background:rgb(0,82,199);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">0,82,199</div>
+<div style="background:rgb(0,87,193);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">0,87,193</div>
+<div style="background:rgb(0,93,188);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">0,93,188</div>
+<div style="background:rgb(0,98,182);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">0,98,182</div>
+<div style="background:rgb(0,104,175);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">0,104,175</div>
+<div style="background:rgb(0,110,169);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">0,110,169</div>
+<div style="background:rgb(0,116,162);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">0,116,162</div>
+<div style="background:rgb(7,123,155);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">7,123,155</div>
+<div style="background:rgb(21,129,148);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">21,129,148</div>
+<div style="background:rgb(34,136,141);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">34,136,141</div>
+<div style="background:rgb(47,142,133);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">47,142,133</div>
+<div style="background:rgb(60,149,125);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">60,149,125</div>
+<div style="background:rgb(71,157,117);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">71,157,117</div>
+<div style="background:rgb(83,164,109);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">83,164,109</div>
+<div style="background:rgb(93,171,100);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">93,171,100</div>
+<div style="background:rgb(104,179,91);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">104,179,91</div>
+<div style="background:rgb(113,187,92);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">113,187,92</div>
+<div style="background:rgb(123,195,73);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">123,195,73</div>
+<div style="background:rgb(132,203,63);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">132,203,63</div>
+<div style="background:rgb(140,211,53);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">140,211,53</div>
+<div style="background:rgb(148,220,43);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">148,220,43</div>
+<div style="background:rgb(156,228,33);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">156,228,33</div>
+<div style="background:rgb(163,237,22);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">163,237,22</div>
+<div style="background:rgb(170,246,11);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">170,246,11</div>
+<div style="background:rgb(176,255,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">176,255,0</div>
+<div style="background:rgb(183,248,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">183,248,0</div>
+<div style="background:rgb(188,241,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">188,241,0</div>
+<div style="background:rgb(194,234,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">194,234,0</div>
+<div style="background:rgb(199,227,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">199,227,0</div>
+<div style="background:rgb(204,220,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">204,220,0</div>
+<div style="background:rgb(209,214,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">209,214,0</div>
+<div style="background:rgb(213,207,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">213,207,0</div>
+<div style="background:rgb(217,200,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">217,200,0</div>
+<div style="background:rgb(221,194,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">221,194,0</div>
+<div style="background:rgb(224,188,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">224,188,0</div>
+<div style="background:rgb(227,181,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">227,181,0</div>
+<div style="background:rgb(230,175,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">230,175,0</div>
+<div style="background:rgb(233,169,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">233,169,0</div>
+<div style="background:rgb(236,163,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">236,163,0</div>
+<div style="background:rgb(238,157,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">238,157,0</div>
+<div style="background:rgb(240,151,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">240,151,0</div>
+<div style="background:rgb(243,145,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">243,145,0</div>
+<div style="background:rgb(244,140,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">244,140,0</div>
+<div style="background:rgb(246,134,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">246,134,0</div>
+<div style="background:rgb(248,129,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">248,129,0</div>
+<div style="background:rgb(249,123,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">249,123,0</div>
+<div style="background:rgb(250,118,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">250,118,0</div>
+<div style="background:rgb(251,112,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">251,112,0</div>
+<div style="background:rgb(252,107,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">252,107,0</div>
+<div style="background:rgb(253,102,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">253,102,0</div>
+<div style="background:rgb(254,97,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">254,97,0</div>
+<div style="background:rgb(255,92,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">255,92,0</div>
+<div style="background:rgb(255,87,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">255,87,0</div>
+<div style="background:rgb(255,82,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">255,82,0</div>
+<div style="background:rgb(255,78,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">255,78,0</div>
+<div style="background:rgb(255,73,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">255,73,0</div>
+<div style="background:rgb(255,68,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">255,68,0</div>
+<div style="background:rgb(255,64,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">255,64,0</div>
+<div style="background:rgb(255,59,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">255,59,0</div>
+<div style="background:rgb(255,55,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">255,55,0</div>
+<div style="background:rgb(255,51,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">255,51,0</div>
+<div style="background:rgb(255,47,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">255,47,0</div>
+<div style="background:rgb(255,43,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">255,43,0</div>
+<div style="background:rgb(255,39,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">255,39,0</div>
+<div style="background:rgb(255,35,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">255,35,0</div>
+<div style="background:rgb(255,31,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">255,31,0</div>
+<div style="background:rgb(255,27,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">255,27,0</div>
+<div style="background:rgb(255,23,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">255,23,0</div>
+<div style="background:rgb(255,20,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">255,20,0</div>
+<div style="background:rgb(255,16,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">255,16,0</div>
+<div style="background:rgb(255,13,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">255,13,0</div>
+<div style="background:rgb(255,10,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">255,10,0</div>
+<div style="background:rgb(255,8,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">255,8,0</div>
+<div style="background:rgb(255,3,0);  width:100%; height:10px; padding:5px; font-family:serif; text-align:center; display:block; border-bottom:1px dotted grey; color:#fff; font-weight:bold">255,3,0</div>
+<style type="text/css">
+  .code { border: 1px solid #ccc; list-style-type: decimal-leading-zero; padding: 5px; margin: 0; }
+  .code code { display: block; padding: 3px; margin-bottom: 0; }
+  .code li { background: #ddd; border: 1px solid #ccc; margin: 0 0 2px 2.2em; }
+</style>
+<ol class="code">
+<li><code>&lt;html&gt;</code></li>
+<li><code>&lt;?</code></li>
+<li><code>//define the colours from 0 to 100</code></li>
+<li></li>
+<li><code>$h = array();</code></li>
+<li></li>
+<li><code>//BLUEST</code></li>
+<li><code>$h[] = '0,0,255';</code></li>
+<li><code>$h[] = '0,1,255';</code></li>
+<li><code>$h[] = '0,2,255';</code></li>
+<li><code>$h[] = '0,4,255';</code></li>
+<li><code>$h[] = '0,5,255';</code></li>
+<li><code>$h[] = '0,7,255';</code></li>
+<li><code>$h[] = '0,9,255';</code></li>
+<li><code>$h[] = '0,11,255';</code></li>
+<li><code>$h[] = '0,13,255';</code></li>
+<li><code>$h[] = '0,15,255';</code></li>
+<li></li>
+<li><code>$h[] = '0,18,253';</code></li>
+<li><code>$h[] = '0,21,251';</code></li>
+<li><code>$h[] = '0,24,250';</code></li>
+<li><code>$h[] = '0,27,248';</code></li>
+<li><code>$h[] = '0,30,245';</code></li>
+<li><code>$h[] = '0,34,243';</code></li>
+<li><code>$h[] = '0,37,240';</code></li>
+<li><code>$h[] = '0,41,237';</code></li>
+<li><code>$h[] = '0,45,234';</code></li>
+<li><code>$h[] = '0,49,230';</code></li>
+<li></li>
+<li><code>$h[] = '0,53,226';</code></li>
+<li><code>$h[] = '0,57,222';</code></li>
+<li><code>$h[] = '0,62,218';</code></li>
+<li><code>$h[] = '0,67,214';</code></li>
+<li><code>$h[] = '0,71,209';</code></li>
+<li><code>$h[] = '0,76,204';</code></li>
+<li><code>$h[] = '0,82,199';</code></li>
+<li><code>$h[] = '0,87,193';</code></li>
+<li><code>$h[] = '0,93,188';</code></li>
+<li><code>$h[] = '0,98,182';</code></li>
+<li></li>
+<li><code>$h[] = '0,104,175';</code></li>
+<li><code>$h[] = '0,110,169';</code></li>
+<li><code>$h[] = '0,116,162';</code></li>
+<li><code>$h[] = '7,123,155';</code></li>
+<li><code>$h[] = '21,129,148';</code></li>
+<li><code>$h[] = '34,136,141';</code></li>
+<li><code>$h[] = '47,142,133';</code></li>
+<li><code>$h[] = '60,149,125';</code></li>
+<li><code>$h[] = '71,157,117';</code></li>
+<li><code>$h[] = '83,164,109';</code></li>
+<li></li>
+<li><code>$h[] = '93,171,100';</code></li>
+<li><code>$h[] = '104,179,91';</code></li>
+<li><code>$h[] = '113,187,92';</code></li>
+<li><code>$h[] = '123,195,73';</code></li>
+<li><code>$h[] = '132,203,63';</code></li>
+<li><code>$h[] = '140,211,53';</code></li>
+<li><code>$h[] = '148,220,43';</code></li>
+<li><code>$h[] = '156,228,33';</code></li>
+<li><code>$h[] = '163,237,22';</code></li>
+<li><code>$h[] = '170,246,11';</code></li>
+<li></li>
+<li><code>$h[] = '176,255,0';</code></li>
+<li><code>$h[] = '183,248,0';</code></li>
+<li><code>$h[] = '188,241,0';</code></li>
+<li><code>$h[] = '194,234,0';</code></li>
+<li><code>$h[] = '199,227,0';</code></li>
+<li><code>$h[] = '204,220,0';</code></li>
+<li><code>$h[] = '209,214,0';</code></li>
+<li><code>$h[] = '213,207,0';</code></li>
+<li><code>$h[] = '217,200,0';</code></li>
+<li><code>$h[] = '221,194,0';</code></li>
+<li></li>
+<li><code>$h[] = '224,188,0';</code></li>
+<li><code>$h[] = '227,181,0';</code></li>
+<li><code>$h[] = '230,175,0';</code></li>
+<li><code>$h[] = '233,169,0';</code></li>
+<li><code>$h[] = '236,163,0';</code></li>
+<li><code>$h[] = '238,157,0';</code></li>
+<li><code>$h[] = '240,151,0';</code></li>
+<li><code>$h[] = '243,145,0';</code></li>
+<li><code>$h[] = '244,140,0';</code></li>
+<li><code>$h[] = '246,134,0';</code></li>
+<li></li>
+<li><code>$h[] = '248,129,0';</code></li>
+<li><code>$h[] = '249,123,0';</code></li>
+<li><code>$h[] = '250,118,0';</code></li>
+<li><code>$h[] = '251,112,0';</code></li>
+<li><code>$h[] = '252,107,0';</code></li>
+<li><code>$h[] = '253,102,0';</code></li>
+<li><code>$h[] = '254,97,0';</code></li>
+<li><code>$h[] = '255,92,0';</code></li>
+<li><code>$h[] = '255,87,0';</code></li>
+<li><code>$h[] = '255,82,0';</code></li>
+<li></li>
+<li><code>$h[] = '255,78,0';</code></li>
+<li><code>$h[] = '255,73,0';</code></li>
+<li><code>$h[] = '255,68,0';</code></li>
+<li><code>$h[] = '255,64,0';</code></li>
+<li><code>$h[] = '255,59,0';</code></li>
+<li><code>$h[] = '255,55,0';</code></li>
+<li><code>$h[] = '255,51,0';</code></li>
+<li><code>$h[] = '255,47,0';</code></li>
+<li><code>$h[] = '255,43,0';</code></li>
+<li><code>$h[] = '255,39,0';</code></li>
+<li></li>
+<li><code>$h[] = '255,35,0';</code></li>
+<li><code>$h[] = '255,31,0';</code></li>
+<li><code>$h[] = '255,27,0';</code></li>
+<li><code>$h[] = '255,23,0';</code></li>
+<li><code>$h[] = '255,20,0';</code></li>
+<li><code>$h[] = '255,16,0';</code></li>
+<li><code>$h[] = '255,13,0';</code></li>
+<li><code>$h[] = '255,10,0';</code></li>
+<li><code>$h[] = '255,8,0';</code></li>
+<li><code>$h[] = '255,3,0';</code></li>
+<li></li>
+<li><code>$x=100;</code></li>
+<li><code>$y=100;</code></li>
+<li></li>
+<li><code>for ($i = 0; $i &lt; 100; $i++)</code></li>
+<li><code>{</code></li>
+<li><code>$rgb = 'rgb(' . $h[$i] . '); ';</code></li>
+<li><code>echo '&lt;div style="background:'. $rgb . ' width:100%; height:10px; display:block; border-bottom:1px dotted grey"&gt;&amp;nbsp;&lt;/div&gt;';</code></li>
+<li><code>}</code></li>
+<li><code>?&gt;</code></li>
+<li><code>&lt;/html&gt;</code></li>
+</ol>
+ 
+							<div class="clear"></div>
+							<br><br>
+							<div class="hr"></div>
+							
+							<span class="section-title">Share</span>
+							<!--social bookmarks-->
+							<ul class="share-post">
+								<li><a class="sp sp_facebook" href="http://www.facebook.com/sharer.php?u=http://andrea.levinge.me/awesome-rgb-colour-scale-from-1-100-can-be-used-in-heatmaps/" target="_blank" title="Share on Facebook"></a></li>		
+								<li><a class="sp sp_twitter" href="http://twitter.com/home/?status=http://andrea.levinge.me/awesome-rgb-colour-scale-from-1-100-can-be-used-in-heatmaps/" target="_blank" title="Tweet this!"></a></li>
+								<li><a class="sp sp_delicious" href="http://del.icio.us/post?url=http://andrea.levinge.me/awesome-rgb-colour-scale-from-1-100-can-be-used-in-heatmaps/" target="_blank" title="Bookmark on Delicious"></a></li>
+								<li><a class="sp sp_digg" href="http://digg.com/submit?url=http://andrea.levinge.me/awesome-rgb-colour-scale-from-1-100-can-be-used-in-heatmaps/" target="_blank" title="Digg this!"></a></li>
+								<li><a class="sp sp_reddit" href="http://reddit.com/submit?url=http://andrea.levinge.me/awesome-rgb-colour-scale-from-1-100-can-be-used-in-heatmaps/" target="_blank" title="Vote on Reddit"></a></li>
+							</ul>
+							<div class="clear"></div>
+
+							<span class="section-title">Tags</span>
+							<div class="tagged">
+															</div>
+						</div>
+						
+						
+						<p><cite><a href="http://andrea.levinge.me/awesome-rgb-colour-scale-from-1-100-can-be-used-in-heatmaps/">Awesome <abbr>rgb</abbr> Color Scale from 1-100 Can Be Used in Heatmaps</a></cite></p>
+						
